@@ -5,4 +5,4 @@ RUN mkdir /conf
 
 ARG JAR_DIR=/usr/local/lib
 
-ENDTRYPOINT ["./myapp"]
+ENTRYPOINT ["./myapp"]
