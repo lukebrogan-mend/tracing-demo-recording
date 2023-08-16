@@ -5,4 +5,8 @@ RUN mkdir /conf
 
 ARG JAR_DIR=/usr/local/lib
 
+# Mend traceability labels
+LABEL io.mend.image.dockerfile.path=frontend/Dockerfile.fe
+LABEL org.opencontainers.image.source=https://github.com/lukebrogan-mend/tracing-demo-recording
+
 ENTRYPOINT ["./myapp"]
